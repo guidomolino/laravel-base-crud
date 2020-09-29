@@ -12,7 +12,7 @@ $factory->define(Post::class, function (Faker $faker) {
       'title'     => $faker -> catchPhrase(),
       'text'      => $faker -> realText($maxNbChars = 200, $indexSize = 2),
       'category'  => $faker -> word(),
-      'like'      => $faker -> randomNumber($nbDigits = 10000, $strict = false),
-      'dislike'   => $faker -> randomNumber($nbDigits = 10000, $strict = false)
+      'like'      => $faker -> numberBetween($min = 1, $max = 9000),
+      'dislike'   => $faker -> numberBetween($min = 1, $max = 9000)
     ];
 });
