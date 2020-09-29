@@ -7,8 +7,8 @@
   </head>
   <body>
     @include('partials.header')
-    <main class="container">      
-      @yield('content')
+    <main class="container">
+      @yield('config')
     </main>
     @include('partials.footer')
   </body>
